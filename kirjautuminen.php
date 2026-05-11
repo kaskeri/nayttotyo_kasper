@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         session_regenerate_id(true);
 
         if ($user['rooli'] === 'ADMIN') {
-            header('Location: admin/home.php');
-        } else {
             header('Location: home.php');
+        } else {
+            header('Location: kirjautuminen.php');
         }
         exit;
     } else {

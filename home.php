@@ -85,23 +85,19 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <div class="header">
-        <a href="home.php">Tapahtumat</a>
-        <a href="homeosallistujat.php">Osallistujat</a>
-        <a href="#">Käyttäjät</a>
-        <a href="homeasetukset.php">Asetukset</a>
-        <a id="admin" href="/ohjelmistokehitys-23n-gamblers/kirjautuminen.php" class="logout-btn"></a>
+        <a href="home.php">Etusivu</a>
+        <a href="kaaviot.php">kaaviot</a>
+        <a id="admin" href="/nayttotyo_kasper/kirjautuminen.php" class="logout-btn"></a>
     </div>
     <div class="sisalto">
     <h1>NäyttöTehtävä</h1>
     <p id="p1">
         Tervetuloa <?php echo $_SESSION['user']['nimi']; ?>
     </p id="p1">
-        <div class="tapahtumat">
-    <h2>Tapahtumat</h2>
+    <br>
+    <a href="kayttajat.php?action=add">Lisää käyttäjä</a>
     
-    <?php
-    include 'posts.php';
-    ?>
+
     </div>
     </div>
 </body>
